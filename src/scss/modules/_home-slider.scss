@@ -1,0 +1,125 @@
+.home-slider {
+    position: relative;
+    margin-bottom: $section-space-b;
+
+    @include breakpoint(mid) {
+        height: calc(100vh - 120px);
+    }
+
+    // &::before {
+    //     background: linear-gradient(180deg, rgba($color-primary, 0.6) 68%, rgba($color-primary, 0) 100%);
+    //     content: '';
+    //     width: 100%;
+    //     height: 260px;
+    //     display: inline-block;
+    //     position: absolute;
+    //     z-index: 1;
+    // }
+}
+
+.home-slider__slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // align-items: center;
+    position: relative;
+    padding: 110px 0 20px;
+    height: calc(100vh - 120px);
+
+}
+
+.home-slider__img {
+    position: absolute;
+    height: auto;
+    object-fit: contain;
+    width: 50%;
+    #{$end}: 0;
+
+}
+
+.home-slider__title {
+    display: flex;
+    margin-bottom: 0;
+    font-size: rem(60);
+    color: $color-primary;
+
+    >span {
+        color: #fff;
+        font-size: rem(20);
+        // padding: rem(20) rem(30);
+        text-transform: capitalize;
+        line-height: 1;
+        margin: 0 5px;
+
+        @include breakpoint(mid) {
+            font-size: rem(50);
+        }
+
+        &:first-child {
+            color: $color-primary;
+            // color: $color-text;
+        }
+
+        &:last-child {
+            color: $color-primary;
+        }
+    }
+}
+
+.home-slider__txt {
+    color: $color-grey-800;
+    font-size: rem(32);
+    font-weight: 400;
+    text-align: start;
+    max-width: 740px;
+    line-height: 36px;
+    margin-top: rem(45);
+}
+
+.home-slider__pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    width: auto;
+    // margin-bottom: 0;
+    margin-bottom: 30px;
+    bottom: 20vh !important;
+}
+
+.home-slider__navigator {
+    width: 20px;
+    height: 4px;
+    cursor: pointer;
+    margin: 0 4px;
+    background-color: rgba(0, 0, 0, .4);
+    margin-bottom: 20px;
+    z-index: 1;
+    border-radius: 5px;
+
+    &--active {
+        width: 40px;
+        background-color: $color-primary;
+        border-color: $color-primary;
+    }
+}
+
+.home-slider__more {
+    text-align: center;
+    margin-top: 50px;
+
+    .button {
+        color: #fff;
+        text-transform: uppercase;
+        padding: rem(7) rem(45);
+    }
+}
+
+.support-slider {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 50% !important;
+        box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, .1);
+    }
+}

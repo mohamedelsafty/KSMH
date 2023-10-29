@@ -1,0 +1,194 @@
+.typo-display4 {
+  -webkit-font-smoothing: antialiased;
+  font-size: 7rem;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 7rem;
+  margin: -1rem 0 3.5rem -0.085em;
+}
+
+.typo-display3 {
+  -webkit-font-smoothing: antialiased;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 3.5rem;
+  margin: -8px 0 64px -0.07em;
+
+  @include breakpoint(isMobile) {
+    font-size: 2.5rem;
+  }
+}
+
+.typo-display2 {
+  -webkit-font-smoothing: antialiased;
+  font-size: 2.813rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 3rem;
+  margin: -0.5rem 0 4rem -0.07em;
+}
+
+.typo-display1 {
+  -webkit-font-smoothing: antialiased;
+  font-size: 2.125rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 2.5rem;
+  margin: -0.5rem 0 4rem -0.07em;
+}
+
+.typo-headline {
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 2rem;
+  margin: -0.5rem 0 1rem -0.06em;
+
+  @include breakpoint(mid) {
+    font-size: 1.5rem;
+  }
+}
+
+.typo-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 2rem;
+  margin: -0.5rem 0 1rem -0.05em;
+}
+
+.typo-subheading2 {
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.75rem;
+  margin: -0.5rem 0 1rem -0.06em;
+}
+
+.typo-subheading1 {
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.938rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5rem;
+  margin: -0.313rem 0 0.813rem -0.06em;
+}
+
+.typo-body1 {
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.25rem;
+  margin: -0.25rem 0 0.75rem 0;
+}
+
+.typo-body2 {
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5rem;
+  margin: -0.25rem 0 0.75rem 0;
+}
+
+.typo-menu--subheader {
+  -webkit-font-smoothing: antialiased;
+  font-size: rem(14);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: -0.25rem 0 0.75rem 0;
+}
+
+.primary-line-header {
+  position: relative;
+  text-align: center;
+  color: $color-primary;
+
+  span {
+    padding: 0.5rem 1rem;
+    background-color: white;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $color-primary;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    #{$start}: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.text-grey {
+  color: $color-grey;
+}
+
+.typo-pink {
+  p {
+    color: $color-pink;
+  }
+
+  color: $color-pink;
+}
+
+.text-brown-500 {
+  color: $color-brown-500;
+}
+
+.badge-brown-500 {
+  background-color: $color-brown-500;
+  color: white;
+}
+
+.typo--comment {
+  text-decoration: line-through;
+}
+
+.typo--underlined {
+  text-decoration: underline;
+}
+
+.typo--border-b {
+  border-bottom: 1px solid #646D82;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  margin-top: 8px;
+  display: none;
+}
+
+.form-validation .error {
+  display: block;
+}
+
+.typo-bg {
+  background: transparent linear-gradient(84deg, #B6A103 0%, rgba(#155C63, .7) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 65px;
+  padding: 18px 25px;
+  color: $color-white;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
